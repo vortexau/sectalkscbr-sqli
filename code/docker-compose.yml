@@ -1,0 +1,23 @@
+version: '3.2'
+services:
+    db:
+        image: postgres:9.3
+        environment:
+            POSTGRES_USER: stcbr
+            POSTGRES_PASSWORD: 6JnrEuMkYdcKmCrF
+            POSTGRES_DB: stcbr
+        volumes:
+            - type: bind
+              source: ./src
+              target: /docker-entrypoint-initdb.d
+    web:
+        build: .
+        ports:
+            - "8000:80"
+        volumes:
+            - type: bind
+              source: ./src
+              target: /var/www/html
+        depends_on:
+            - db
+
