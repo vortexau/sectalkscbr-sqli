@@ -8,7 +8,7 @@ services:
             POSTGRES_DB: stcbr
         volumes:
             - type: bind
-              source: ./src
+              source: ./sql
               target: /docker-entrypoint-initdb.d
     web:
         build: .
