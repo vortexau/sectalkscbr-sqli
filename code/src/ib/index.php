@@ -5,11 +5,9 @@ require_once("../header.php");
 
 error_reporting(E_ALL);
 
-print("# pwd ");
-print("<br />" . PHP_EOL);
+print("# pwd ". PHP_EOL);
 print("/home/sqli/inband" . PHP_EOL);
-print("<br />");
-print("<br />" . PHP_EOL);
+print(PHP_EOL);
 
 if(isset($_GET['id']) && is_array($_GET['id'])) {
 	print("That doesn't work here, sorry!");
