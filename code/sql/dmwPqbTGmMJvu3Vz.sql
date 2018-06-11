@@ -28,8 +28,8 @@ CREATE TABLE leet (
 	id serial,
 	iphash varchar(32),
 	time varchar(14),
-	cookie varchar(255),
-)
+	cookie varchar(255)
+);
 
 
 

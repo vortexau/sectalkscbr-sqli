@@ -1,0 +1,12 @@
+in-band:
+
+1 and 1=1
+
+blind:
+
+Get the first letter of 'Postgres'
+1 and ( SELECT SUBSTR( ( SELECT version() ), 1, 1 ) = 'P')
+
+leet
+
+

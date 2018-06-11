@@ -18,11 +18,14 @@ if(!isset($_GET['id'])) {
 
 $sql = "SELECT username, password FROM blind WHERE id = " . $_GET['id'];
 
+print($sql);
+
 $result = pg_query($db, $sql);
 
 if($result === false) {
 	die();
 }
+
 $row = pg_fetch_row($result, 0);
 
 print("+---------------------------------------------------+" . PHP_EOL);
