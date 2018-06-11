@@ -10,7 +10,7 @@ print("<br />");
 print("
 select workshop, url from workshops;
 +-------------------------------------+
-| In Band       | <a href=\"/ib\">sqli.uid0.sh/ib</a>     |
+| In Band       | <a href=\"/ib/?id=1\">sqli.uid0.sh/ib</a>     |
 | Blind SQLi    | <a href=\"/blind\">sqli.uid0.sh/blind</a>  |
 | Out of Band   | <a href=\"/oob\">sqli.uid0.sh/oob</a>    |
 | ¯\_(ツ)_/¯    | <a href=\"/leet\">sqli.uid0.sh/leet</a>   |
@@ -18,5 +18,5 @@ select workshop, url from workshops;
 print("<br />");
 print("greetz to syngularity0, lana, h4nzr && teh cbr krëw");
 print("<br />");
-print(":wq");
+print(":wq 4 lyfe");
 require_once('footer.php');
