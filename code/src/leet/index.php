@@ -56,9 +56,6 @@ if(!isset($_COOKIE['leet'])) {
 	# Based on the contents of the cookie, use it for injection
 	$sql = "SELECT iphash, time, cookie FROM leet WHERE iphash = 'jj" . $data['iphash'] . "'";
 
-	error_log($sql);
-	error_log($cookiedata);
-	error_log(var_dump($data), true);
 	$result = pg_query($db, $sql);
 
 	if($result === false) {
