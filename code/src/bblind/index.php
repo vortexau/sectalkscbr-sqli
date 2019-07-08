@@ -5,6 +5,7 @@ require_once("../header.php");
 print("# pwd " . PHP_EOL);
 print("/home/sqli/blind" . PHP_EOL . PHP_EOL);
 print("goal: discover the true/false condition && then discover the table name" . PHP_EOL);
+print("hint: backend is postgresql");
 print(PHP_EOL);
 # Blind SQLi
 #
@@ -18,7 +19,9 @@ if(!isset($_GET['id'])) {
 
 $sql = "SELECT username, password FROM blind WHERE id = " . $_GET['id'];
 
+print("<!-- ");
 print($sql);
+print("-->" . PHP_EOL);
 
 $result = pg_query($db, $sql);
 

