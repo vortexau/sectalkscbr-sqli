@@ -4,13 +4,13 @@ require_once("../db.php");
 require_once("../header.php");
 print("# pwd " . PHP_EOL);
 print("/home/sqli/blind" . PHP_EOL . PHP_EOL);
-print("goal: discover the true/false condition && then discover the table name" . PHP_EOL);
+print("goal: trigger a reliable true / false condition" . PHP_EOL);
 print("hint: backend is postgresql");
 print(PHP_EOL);
 # Blind SQLi
 #
 if(isset($_GET['id']) && is_array($_GET['id'])) {
-    die("Not here either");
+    die("Your powers are worthless here!");
 }
 
 if(!isset($_GET['id'])) {

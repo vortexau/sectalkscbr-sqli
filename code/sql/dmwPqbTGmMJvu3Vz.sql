@@ -21,16 +21,6 @@ CREATE TABLE blind (
 );
 
 INSERT INTO blind (username, password) VALUES ('vortex',md5('password1'));
-INSERT INTO blind (username, password) VALUES ('syn',md5('synrocks'));
-INSERT INTO blind (username, password) VALUES ('lana', md5('friedchicken'));
-
-CREATE TABLE leet (
-	id serial,
-	iphash varchar(32),
-	time varchar(14),
-	cookie varchar(255)
-);
-
-
-
+INSERT INTO blind (username, password) VALUES ('jack',md5('imjack'));
+INSERT INTO blind (username, password) VALUES ('st0rm', md5('wasntme'));
 

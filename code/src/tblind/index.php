@@ -4,7 +4,7 @@ require_once("../db.php");
 require_once("../header.php");
 print("# pwd " . PHP_EOL);
 print("/home/sqli/blind" . PHP_EOL . PHP_EOL);
-print("goal: discover the true/false condition with a time based payload" . PHP_EOL);
+print("goal: discover a true/false condition with a time based payload" . PHP_EOL);
 print("hint: backend is postgresql");
 print(PHP_EOL);
 # Blind SQLi
